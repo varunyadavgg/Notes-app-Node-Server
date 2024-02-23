@@ -5,7 +5,7 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const NOTES_FILE = './notes/notes-8/notes.json';
+const NOTES_FILE = 'notes.json';
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
