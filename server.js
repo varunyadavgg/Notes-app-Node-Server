@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; // Adjust the port to match your Render service settings
 const NOTES_FILE = 'notes.json';
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -64,8 +64,13 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Serve static files (CSS, JS)
+// Serve static files (CSS, JS, etc.)
 app.use(express.static('public'));
+
+// Serve the `notes.json` directly
+app.get('/notes', (req, res) => {
+  res.sendFile(path.join(__dirname, NOTES_FILE)); // Ensure the path matches your directory structure
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
