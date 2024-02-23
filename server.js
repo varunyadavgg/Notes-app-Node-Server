@@ -7,8 +7,9 @@ const app = express();
 const PORT = process.env.PORT || 3000; // Adjust the port to match your Render service settings
 const NOTES_FILE = 'notes.json';
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// Increase the payload limit for URL-encoded and JSON bodies
+app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
+app.use(bodyParser.json({ limit: '50mb' }));
 
 // CORS Middleware
 app.use(function(req, res, next) {
@@ -18,7 +19,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-// Load notes from the JSON file
+// Function to load notes from the JSON file
 function loadNotes() {
     try {
         const data = fs.readFileSync(NOTES_FILE);
@@ -29,7 +30,7 @@ function loadNotes() {
     }
 }
 
-// Save notes to the JSON file
+// Function to save notes to the JSON file
 function saveNotes(notes) {
     try {
         const data = JSON.stringify(notes, null, 2);
@@ -39,7 +40,7 @@ function saveNotes(notes) {
     }
 }
 
-// Add or update a note
+// Route to add or update a note
 app.post('/add-note', (req, res) => {
     const { subject, chapter, subheading, content } = req.body;
 
@@ -59,15 +60,15 @@ app.post('/add-note', (req, res) => {
     res.send('Note added successfully');
 });
 
-// Serve index.html
+// Route to serve index.html
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Serve static files (CSS, JS, etc.)
+// Middleware to serve static files from 'public' directory
 app.use(express.static('public'));
 
-// Serve the `notes.json` directly
+// Route to serve the `notes.json` file directly
 app.get('/notes', (req, res) => {
   res.sendFile(path.join(__dirname, NOTES_FILE)); // Ensure the path matches your directory structure
 });
