@@ -1,96 +1,31 @@
 {
   "DRRM": {
-    "1": {
-      "Subheading 1": "This is a test - Test Successful",
-      "Subheading 2": "Notes for DRRM Chapter 1 - Subheading 2"
-    },
-    "2": {
-      "Subheading 1": "<h1> Notes for DRRM Chapter 2</h1> - Subheading 1",
-      "Subheading 2": "Notes for DRRM Chapter 2 - Subheading 2"
-    },
-    "3": {
-      "Subheading 1": "Notes for DRRM Chapter 3 - Subheading 1",
-      "Subheading 2": "Notes for DRRM Chapter 3 - Subheading 2"
-    },
-    "4": {
-      "Subheading 1": "Notes for DRRM Chapter 4 - Subheading 1",
-      "Subheading 2": "Notes for DRRM Chapter 4 - Subheading 2"
-    },
-    "5": {
-      "Subheading 1": "Notes for DRRM Chapter 5 - Subheading 1",
-      "Subheading 2": "Notes for DRRM Chapter 5 - Subheading 2"
-    }
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {}
   },
   "POE": {
-    "1": {
-      "Subheading 1": "Notes for POE Chapter 1 - Subheading 1",
-      "Subheading 2": "Notes for POE Chapter 1 - Subheading 2",
-      "This is the test people have been waiting for dude": "<h1>This</h1><p><br></p><p><img src=\"https://logos.flamingtext.com/Word-Logos/shows-design-fluffy-name.png\"></p><p><br></p><h1><strong><em><u>A Lot of Effort ra </u></em></strong></h1>",
-      "Subheading 3": "<h1><strong style=\"color: rgb(230, 0, 0);\">This is the content that will be put in the subheading 3 </strong></h1><p><br></p><h2><span style=\"background-color: rgb(255, 235, 204);\">So better call Saul</span></h2>"
-    },
-    "2": {
-      "Subheading 1": "Notes for POE Chapter 2 - Subheading 1",
-      "Subheading 2": "Notes for POE Chapter 2 - Subheading 2"
-    },
-    "3": {
-      "Subheading 1": "Notes for POE Chapter 3 - Subheading 1",
-      "Subheading 2": "Notes for POE Chapter 3 - Subheading 2"
-    },
-    "4": {
-      "Subheading 1": "Notes for POE Chapter 4 - Subheading 1",
-      "Subheading 2": "Notes for POE Chapter 4 - Subheading 2"
-    },
-    "5": {
-      "Subheading 1": "Notes for POE Chapter 5 - Subheading 1",
-      "Subheading 2": "Notes for POE Chapter 5 - Subheading 2"
-    }
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {}
   },
   "EC": {
-    "1": {
-      "Subheading 1": "Notes for EC Chapter 1 - Subheading 1",
-      "Subheading 2": "Notes for EC Chapter 1 - Subheading 2"
-    },
-    "2": {
-      "Subheading 1": "Notes for EC Chapter 2 - Subheading 1",
-      "Subheading 2": "Notes for EC Chapter 2 - Subheading 2"
-    },
-    "3": {
-      "Subheading 1": "Notes for EC Chapter 3 - Subheading 1",
-      "Subheading 2": "Notes for EC Chapter 3 - Subheading 2"
-    },
-    "4": {
-      "Subheading 1": "Notes for EC Chapter 4 - Subheading 1",
-      "Subheading 2": "Notes for EC Chapter 4 - Subheading 2"
-    },
-    "5": {
-      "Subheading 1": "Notes for EC Chapter 5 - Subheading 1",
-      "Subheading 2": "Notes for EC Chapter 5 - Subheading 2"
-    }
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {}
   },
   "Others": {
-    "Resources": {
-      "Subheading 1": "Notes for Others Resources - Subheading 1",
-      "Subheading 2": "Notes for Others Resources - Subheading 2"
-    },
-    "Info": {
-      "Subheading 1": "Notes for Others Info - Subheading 1",
-      "Subheading 2": "Notes for Others Info - Subheading 2"
-    },
-    "Assignments": {
-      "Subheading 1": "Notes for Others Assignments - Subheading 1",
-      "Subheading 2": "Notes for Others Assignments - Subheading 2"
-    },
-    "Projects": {
-      "Subheading 1": "Notes for Others Projects - Subheading 1",
-      "Subheading 2": "Notes for Others Projects - Subheading 2"
-    },
-    "Syllabus pdf": {
-      "Subheading 1": "Notes for Others Syllabus pdf - Subheading 1",
-      "Subheading 2": "Notes for Others Syllabus pdf - Subheading 2"
-    },
-    "Owner Page": {
-      "Subheading 1": "Notes for Others Owner Page - Subheading 1",
-      "Subheading 2": "Notes for Others Owner Page - Subheading 2"
-    }
+    "Resources": {},
+    "Info": {},
+    "Assignments": {},
+    "Projects": {},
+    "Syllabus pdf": {},
+    "Owner Page": {}
   }
 }
